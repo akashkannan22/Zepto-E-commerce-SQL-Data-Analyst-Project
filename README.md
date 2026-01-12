@@ -36,7 +36,7 @@ availableQuantity: Units available in inventory
 
 weightInGms: Product weight in grams
 
-outOfStock: Boolean flag indicating stock availability
+outOfStock: 0 & 1 indicating stock availability
 
 quantity: Number of units per package (mixed with grams for loose produce)
 
@@ -55,11 +55,11 @@ CREATE TABLE zepto (
   availableQuantity INTEGER,
   discountedSellingPrice NUMERIC(8,2),
   weightInGms INTEGER,
-  outOfStock BOOLEAN,
+  outOfStock INTEGER,
   quantity INTEGER
 );
 2. Data Import
-Loaded CSV 
+Loaded zepti_v2.CSV 
 
 3. 🔍 Data Exploration
 Counted the total number of records in the dataset
